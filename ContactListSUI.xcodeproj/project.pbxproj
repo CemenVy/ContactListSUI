@@ -16,7 +16,6 @@
 		609ACDB62AECF7860039A3A5 /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609ACDB52AECF7860039A3A5 /* ContactListView.swift */; };
 		609ACDB82AECF7D40039A3A5 /* ContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609ACDB72AECF7D40039A3A5 /* ContactDetailView.swift */; };
 		609ACDBA2AECF8020039A3A5 /* ContactSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609ACDB92AECF8020039A3A5 /* ContactSectionView.swift */; };
-		609ACDBC2AED01AF0039A3A5 /* ContactRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609ACDBB2AED01AF0039A3A5 /* ContactRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +29,6 @@
 		609ACDB52AECF7860039A3A5 /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
 		609ACDB72AECF7D40039A3A5 /* ContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView.swift; sourceTree = "<group>"; };
 		609ACDB92AECF8020039A3A5 /* ContactSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSectionView.swift; sourceTree = "<group>"; };
-		609ACDBB2AED01AF0039A3A5 /* ContactRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +66,6 @@
 				60809C782AEBE303001E8243 /* ContactListSUIApp.swift */,
 				60809C7A2AEBE303001E8243 /* ContentView.swift */,
 				609ACDB52AECF7860039A3A5 /* ContactListView.swift */,
-				609ACDBB2AED01AF0039A3A5 /* ContactRowView.swift */,
 				609ACDB72AECF7D40039A3A5 /* ContactDetailView.swift */,
 				609ACDB92AECF8020039A3A5 /* ContactSectionView.swift */,
 				60809C7C2AEBE304001E8243 /* Assets.xcassets */,
@@ -178,7 +175,6 @@
 				609ACDB02AECF6760039A3A5 /* Contact.swift in Sources */,
 				609ACDB32AECF6CC0039A3A5 /* DataStore.swift in Sources */,
 				60809C7B2AEBE303001E8243 /* ContentView.swift in Sources */,
-				609ACDBC2AED01AF0039A3A5 /* ContactRowView.swift in Sources */,
 				60809C792AEBE303001E8243 /* ContactListSUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,15 +8,19 @@
 import SwiftUI
 
 struct ContactListView: View {
-    
+    let navigationTitle = "Contacts List"
     let contacts: [Contact]
     
     var body: some View {
-        List(contacts) { contact in
-            ContactRowView(contact: contact)
+        List (contacts) { contact in
+            NavigationLink(destination: ContactDetailView(contact: contact)) {
+                HStack {
+                    Text(contact.fullName)
+                }
+            }
         }
         .listStyle(.plain)
-        .navigationTitle("Contacts List")
+        .navigationTitle(navigationTitle)
     }
 }
 
