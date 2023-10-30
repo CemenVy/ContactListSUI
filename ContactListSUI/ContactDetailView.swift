@@ -17,12 +17,19 @@ struct ContactDetailView: View {
                 Image(systemName: "person.fill")
                     .resizable()
                     .frame(width: 100, height: 100)
+                    .padding()
                 Spacer()
             }
-            .padding()
-            Label("\(contact.phone)", systemImage: "phone")
-            Label("\(contact.email)", systemImage: "tray")
+        
+            Label(contact.phone, systemImage: "phone")
+            Label(contact.email, systemImage: "tray")
         }
-        .navigationTitle("\(contact.fullName)")
+        .navigationTitle(contact.fullName)
+    }
+}
+
+struct ContactDetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContactDetailView(contact: Contact.getContactList().first!)
     }
 }

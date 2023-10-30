@@ -12,21 +12,17 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
-            NavigationStack {
-                ContactListView(contacts: contacts)
-            }
-            .tabItem {
-                Image(systemName: "person.2")
-                Text("Contacts")
-            }
+            ContactListView(contacts: contacts)
+                .tabItem {
+                    Image(systemName: "person.2")
+                    Text("Contacts")
+                }
             
-            NavigationStack {
-                ContactSectionView(contacts: contacts)
-            }
-            .tabItem {
-                Image(systemName: "phone")
-                Text("Numbers")
-            }
+            ContactSectionView(contacts: contacts)
+                .tabItem {
+                    Image(systemName: "phone")
+                    Text("Numbers")
+                }
         }
     }
 }

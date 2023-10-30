@@ -11,12 +11,11 @@ struct ContactSectionView: View {
     let contacts: [Contact]
     
     var body: some View {
-        List { ForEach(contacts) { contact in
-            Section(contact.fullName) {
-                Label("\(contact.phone)", systemImage: "phone")
-                Label("\(contact.email)", systemImage: "tray")
+        List(contacts) { contact in
+            Section(header: Text(contact.fullName).font(.headline)) {
+                Label(contact.phone, systemImage: "phone")
+                Label(contact.email, systemImage: "tray")
             }
-        }
         }
         .navigationTitle("Contacts List")
     }
